@@ -11,11 +11,11 @@ TASKS
         exit if (comp >= 50 or human >= 50)
         creates a round object
     c. inner while loop checks if stop round indicator = 'Y'
-       exit if (either die = 1 or human selects no or computer round score >= 20) 
+       exit if (either die = 1 or human selects no or computer round score >= 20)
     d. inside code implements round object
        rolls dice uses if statement to see if round indicator should be set to 'N'
        prints running score
-    e. once outer while loop is exited. print final score and and declare winner
+    e. once outer while loop is exited. print final score and declare winner
    4. Testing zip completed program Due 10/15/2017
    5. Submit Due 10/17/2017
 
