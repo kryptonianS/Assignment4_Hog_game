@@ -8,27 +8,20 @@ public class Round
 {
     // int totalScore;
     String currentPlayer;
-    int roundScore = 0;
+    int totalScore, roundScore = 0;
     boolean stopInd = false;
+
 
 
 
     //-----------------------------------------------------------------
     //  Constructor: for each round of the game
     //-----------------------------------------------------------------
-    public Round(String player)
-    {
-        currentPlayer = player;
-    }
-
-    //-----------------------------------------------------------------
-    //  Rolls the die and returns the result.
-    //-----------------------------------------------------------------
-    // public void roll()
-    // {
-    //     onePair.rollDice();
-    //     System.out.println(onePair.toString());
-    // }
+    public Round(String player, int inTotalScore)
+        {
+            currentPlayer = player;
+            totalScore = inTotalScore;
+        }
 
     public String getPlayer()
         {return currentPlayer;}
@@ -39,8 +32,8 @@ public class Round
     public int getRoundScore()
         {return roundScore;}
 
-    public int getPotentialTotal(int currentTotal)
-        {return roundScore + currentTotal;}
+    public int getPotentialTotal()
+        {return roundScore + totalScore;}
 
     public boolean getStopInd()
         {return stopInd;}
