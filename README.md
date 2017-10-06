@@ -2,7 +2,7 @@
 Game of Dice created in Java
 TASKS
   1. Create PairofDice class - CL - Due 10/9/2017 Done
-  2. Create Round class    - LZ Due 10/11/2017
+  2. Create Round class    - LZ Due 10/11/2017    Done
   3. Create Hog driver - QD, CL Due 10/13/2017
     a. initializes PairofDice object,
        humanTotalScore, ComputerTotalScore, roundNumber
