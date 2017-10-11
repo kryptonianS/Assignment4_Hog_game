@@ -31,11 +31,6 @@
   *
  */
 
-public class Test_round {
-    public static void main(String[] args){
-
-
-
 
 public class Test_round {
    public static void main(String[] args){
@@ -44,21 +39,21 @@ public class Test_round {
 
 // TESTING current classes. 
       my_player = ((currRound%2 == 1) ? "Computer" : "Human");
-	  PairOfDie DiePair = new PairOfDie();
+	  PairOfDie diePair = new PairOfDie();
       //should assign player based on round we are in. odd round is computer even round is human
 	  Round  myRound = new Round(my_player, currentScore);
 	  
       System.out.println("Current Player: " + myRound.getPlayer());
-      System.out.println("Current Score: " + myRound.getRoundScore());
+      System.out.println("Current Round Score: " + myRound.getRoundScore());
 
-      DiePair.rollDice();
+      diePair.rollDice();
       System.out.println("\nFirst Dice: " + diePair.getDie1());
       System.out.println("Second Dice: " + diePair.getDie2());
-      System.out.println(DiePair.toString());
-      System.out.println("Sum of Dice: " + DiePair.sumDice());
+      System.out.println(diePair.toString());
+      System.out.println("Sum of Dice: " + diePair.sumDice());
 
 	  //add round score should add to both round score and potential total.
-      myRound.addRoundScore(DiePair.sumDice()); 
+      myRound.addRoundScore(diePair.sumDice()); 
       	  
       System.out.println(myRound.toString());
 	  
@@ -66,8 +61,7 @@ public class Test_round {
       myRound.setStopInd(true);
       System.out.println("Stop Indicator: " + myRound.getStopInd());
 
-        }
-
-   }
+    }
 
 }
+
